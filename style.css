@@ -40,7 +40,7 @@
   background-color: #edeef0;
   border-radius: 30px;
   padding-left: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 input {
@@ -111,4 +111,12 @@ ul li span {
 
 ul li span:hover {
   background-color: #edeef0;
+}
+
+.error {
+  font-size: 13px;
+  color: red;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  visibility: hidden;
 }

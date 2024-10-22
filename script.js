@@ -4,7 +4,7 @@ const addButton = document.querySelector('button')
 
 addButton.addEventListener('click', () => {
   if (inputBox.value === '') {
-    alert('You must write something')
+    document.querySelector('.error').style.visibility = 'visible'
   } else {
     let li = document.createElement('li')
     li.innerText = inputBox.value
@@ -14,6 +14,8 @@ addButton.addEventListener('click', () => {
     li.appendChild(span)
 
     listContainer.appendChild(li)
+
+    document.querySelector('.error').style.visibility = 'hidden'
   }
   inputBox.value = ''
   saveData()
